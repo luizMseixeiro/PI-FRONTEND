@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O semeador</title>
+        <!-- Fonte -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+            rel="stylesheet">
+        <!-- Estilos -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="js/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" alt="logo-principal" id="logo-principal">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Página Inicial
+                            <span class="sr-only">(Página atual)</span></a>
+                        <a class="nav-item nav-link active" href="fotos.html">FOTOS E PROJETOS</a>
+                        <a class="nav-item nav-link" href="doacao.html">DOAÇÃO</a>
+                        <a class="nav-item nav-link" href="contato.html">CONTATOS</a>
+                        <a class="nav-item nav-link" href="matricula.html">MATRICULA</a>
+                    </div>
+                </div>
+                <a
+                href="agende.html"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                style="padding: 16px 15px; font-size: 12px; font-weight: bold; text-transform: uppercase; float: left; margin: 0 0 0 10px!important; background-color: #808080;">
+                <span class="fusion-button-text">AGENDE SUA VISITA</span>
+            </a>
+            </nav>
+            <!-- <div class="container" id="nav-container"> <nav class="navbar
+            navbar-expand-lg bg-secondary navbar-dark"> <a class="navbar-brand"
+            href="index.html"> <img id="logo" src="img/logo.jpg" alt="O Semeador"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false"
+            aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button> <div class="collapse navbar-collapse justify-content-center"
+            id="navbar-links"> <div class="navbar-nav"> <a href="index.html"> <span
+            class="menu-text">HOME</span> </a> <a href="fotos.html"> <span
+            class="menu-text">FOTOS E PROJETOS</span> </a> <a href="doacao.html"> <span
+            class="menu-text">DOAÇÃO</span> </a> <a href="contato.html"> <span
+            class="menu-text">CONTATOS</span> </a> <a href="matricula.html"> <span
+            class="menu-text">MATRICULA</span> </a> </div> </nav> </div> -->
+        </header>
+        <div id="portfolio-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Conheça nossos projetos</h3>
+                    </div>
+                    <div class="col-md-12" id="filter-btn-box">
+                        <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                        <button class="main-btn filter-btn" id="dev-btn">Alunos</button>
+                        <button class="main-btn filter-btn" id="dsg-btn">Projetos</button>
+                        <button class="main-btn filter-btn" id="seo-btn">Professores</button>
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts" class="justify-content-center">
+                    <div class="footer_logo">
+                        <img class="semeador_footer" src="img/logo.jpg" alt="">
+                    </div>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Endereço:</h3>
+                        </li>
+                        <li>
+                            <p>R. dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, 09580-300</p>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Email:</h3>
+                        </li>
+                        <li>
+                            <p>atendimento@osemeador.com</p>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Telefone:</h3>
+                        </li>
+                        <li>
+                            <p>+55 11 9999-9999</p>
+                        </li>
+                    </ul>
+            </ul>
+            <section class="mapa">
+                <div class="mapa-conteudo">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="250"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+        <div id="footer_copyright">
+            &#169 Alunos Insituto Mauá de Tecnologia (Dev Luiz Miguel Seixeiro/Paulo
+            Vinicius Campos)
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <div vw="vw" class="enabled">
+        <div vw-access-button="vw-access-button" class="active"></div>
+        <div vw-plugin-wrapper="vw-plugin-wrapper">
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window
+            .VLibras
+            .Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</main>
+</html>
